@@ -412,7 +412,7 @@ namespace GDI {
 		}
 	}
 	
-	DWORD WINAPI ScreenWarp(LPVOID pvoid)
+	/* DWORD WINAPI ScreenWarp(LPVOID pvoid)
 	{
 		while (true) {
 			HDC hdc = GetDC(0);
@@ -420,7 +420,7 @@ namespace GDI {
 			ReleaseDC(0, hdc);
 			Sleep(10);
 		}
-	}
+	} */
 	
 	DWORD WINAPI OrPixelate(LPVOID pvoid)
 	{
